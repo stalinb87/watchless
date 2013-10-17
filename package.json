@@ -1,0 +1,19 @@
+{
+  "name": "compiler-less",
+  "version": "0.0.1",
+  "description": "This is a auto less compiler",
+  "main": "app.js",
+  "bin": {
+    "compiler-less": "./app.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stalin Bonilla",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "watch": "~0.8.0",
+    "optimist": "~0.6.0",
+    "less": "~1.4.2"
+  }
+}
