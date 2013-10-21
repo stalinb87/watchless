@@ -11,7 +11,24 @@ var folder = argv.d;
 
 //
 if(argv.h) {
-  console.log('Supposed to show help');
+  console.log('Watch for a entire directory and only compile a specific file');
+  console.log('')
+  console.log('Usage: watchless [Options]');
+  console.log('');
+  console.log(' --- Options ---');
+  console.log("");
+  console.log("   '-o' the output folder");
+  console.log("   '-d' the directory to watch");
+  console.log("   '-f' the file to compile when there is a change in the directory");
+  console.log("   '-h' show the help");
+  console.log();
+  console.log("All the options are required (for now) later i will make some error checking");
+  console.log();
+  console.log(" --- Example ---");
+  console.log();
+  console.log("   watchless -o cssfolder -d lessfolder -f lessfolder/file.less");
+  console.log();
+  console.log();
   process.exit();
 } 
 console.log('Waiting for changes in folder '+folder);
