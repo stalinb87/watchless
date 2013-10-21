@@ -58,7 +58,8 @@ var compile = function(f, stat, prev) {
               console.log("an error happend while trying to save the file to the output "+ output);
               console.log(err);
             } else {
-              console.log('compiled file '+file +' on '+outputFile);
+
+              console.log(new Date().toLocaleTimeString() + ' compiled file '+file +' on '+outputFile);
             }
           });
         }
